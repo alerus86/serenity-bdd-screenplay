@@ -23,9 +23,9 @@ public class JsonDataReader {
         EnvironmentSpecificConfiguration serenityConf = EnvironmentSpecificConfiguration.from(Serenity.environmentVariables());
         String Environment = Serenity.getCurrentSession().getOrDefault("environment", QA).toString();
         String jsonFileRootPath = serenityConf.getProperty("testDataResourcePath");
-        jsonFileRootPath = Environment.equals(QA) ? jsonFileRootPath : jsonFileRootPath.replace("/qa", "/" + Environment);
+        jsonFileRootPath = Environment.equals(QA) ? jsonFileRootPath : jsonFileRootPath.replace("/jsonfiles", "/" + Environment);
 
-        return jsonFileRootPath = jsonFileRootPath + JSONFile + ".json";
+        return jsonFilePath = jsonFileRootPath + JSONFile + ".json";
     }
 
     public static UserData userData(String file, String user) {

@@ -1,11 +1,11 @@
 package serenity.bdd.automation.framework.stepdefinitions.general;
 
+import io.cucumber.java.Before;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
